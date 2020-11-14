@@ -3,13 +3,15 @@
 namespace Kata;
 
 use PHPUnit\Framework\TestCase;
-use Kata\Index;
+use Kata\GameOfLife;
 
-class IndexTest extends TestCase
+class GameOfLifeTest extends TestCase
 {
+    private $gameOfLife;
+
     protected function setUp(): void
     {
-        $this->index = new Index();
+        $this->gameOfLife = new GameOfLife();
     }
 
     public function testShallPass(): void
@@ -19,6 +21,6 @@ class IndexTest extends TestCase
 
     public function testHandleReturnTrue(): void
     {
-        $this->assertEquals(true, $this->index->handle());
+        $this->assertEquals(true, $this->gameOfLife->handle());
     }
 }

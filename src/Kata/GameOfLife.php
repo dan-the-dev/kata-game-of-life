@@ -2,7 +2,7 @@
 
 namespace Kata;
 
-class Index
+class GameOfLife
 {
     public function handle(): bool
     {
